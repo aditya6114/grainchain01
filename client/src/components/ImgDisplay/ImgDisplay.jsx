@@ -15,6 +15,15 @@ const ImgDisplay = () => {
       navigate("/signup");
     }
   };
+  const handleRequestNowClick = () => {
+    if (user) {
+      // User is logged in, navigate to food donation route
+      navigate("/requestfood");
+    } else {
+      // User is not logged in, navigate to signup route
+      navigate("/signup");
+    }
+  };
 
   return (
     <div className="first-display">
@@ -23,9 +32,14 @@ const ImgDisplay = () => {
           Feeding The <span>Hungry</span>
         </h1>
         <h3>We Serve Food To The Needy Peoples</h3>
-        <button className="btn" onClick={handleDonateNowClick}>
-          Donate Now
-        </button>
+        <div className="buttons">
+          <button className="btn" onClick={handleDonateNowClick}>
+            Donate Now
+          </button>
+          <button className="btn" onClick={handleRequestNowClick}>
+            Request Food
+          </button>
+        </div>
       </div>
     </div>
   );

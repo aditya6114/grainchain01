@@ -18,7 +18,7 @@ const Food = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  };  
 
   const handleTagChange = (event) => {
     setSelectedTag(event.target.value);

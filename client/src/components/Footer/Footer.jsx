@@ -6,33 +6,32 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="heading-footer">
-        ShareThe<span>MEAL</span>
+        Grain<span>Chain</span>
       </div>
       <div className="div1">
         <h4 className="footer-h4">Who We Are</h4>
-        <p className="footer-p">About Us</p>
-        <p className="footer-p">Our Work</p>
-        <p className="footer-p">Our Vision</p>
-        <p className="footer-p">Contact</p>
+        <a href="/about-us" className="footer-link">About Us</a>
+        <a href="#" className="footer-link">Our Work</a>
+        <a href="/vision" className="footer-link">Our Vision</a>
+        <a href="#" className="footer-link">Contact</a>
       </div>
       <div className="div2">
         <h4 className="footer-h4">Get Involved</h4>
-        <p className="footer-p">Request For Food</p>
-        <p className="footer-p">Partner with Us</p>
+        <a href="/requestfood" className="footer-link">Request For Food</a>
+        <a href="#" className="footer-link">Partner with Us</a>
       </div>
       <div className="div3">
-        <h4 className='footer-h4 className="footer-p"'>Socials</h4>
-        <div className="footer-icons">
-          <p className="footer-p">
+        <h4 className="footer-h4">Socials</h4>
+        <p className="footer-p"></p>
+          <a href="#" className="footer-link">
             <FaInstagram size={40} />
-          </p>
-          <p className="footer-p">
+          </a>
+          <a href="#" className="footer-link">
             <FaTwitter size={40} />
-          </p>
-          <p className="footer-p">
+          </a>
+          <a href="#" className="footer-link">
             <FaFacebook size={40} />
-          </p>
-        </div>
+          </a>
       </div>
     </div>
   );

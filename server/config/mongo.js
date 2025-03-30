@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb://127.0.0.1:27017/food-donations';
+const MONGODB_URI = 'mongodb+srv://adityachoudhary6114:HOSMeYhJOyb4xNat@cluster0.zeuur.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 const connectDB = async () => {
     try {
@@ -16,3 +16,4 @@ const connectDB = async () => {
 };
 
 export default connectDB;
+

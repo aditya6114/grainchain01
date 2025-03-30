@@ -1,0 +1,108 @@
+/* Request Food Component Styles - Updated to Match Donations */
+
+/* Section Container */
+.request-section {
+  margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-height: fit-content;
+}
+
+/* Section Title - Matches Donations */
+.request-section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eaeaea;
+}
+
+/* Form Container - Now matches donation cards */
+.request-form {
+  padding: 1.rem;
+  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-food-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups - Enhanced to match */
+.form-group {
+  margin-bottom: 0; /* Changed from 1.25rem to match gap */
+}
+
+.form-group label {
+  display: block;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs - Updated to match card content style */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem; /* Increased from 0.25rem */
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.2);
+}
+
+/* Submit Button - Matches request button */
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem; /* Matches donation button */
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+  align-self: flex-start; /* Matches donation button */
+  width: auto; /* Changed from 100% */
+}
+
+.submit-btn:hover {
+  background-color: #219653;
+}
+
+.submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Responsive Adjustments - Now matches donations */
+@media (max-width: 768px) {
+  .request-food-form {
+    padding: 1rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+}

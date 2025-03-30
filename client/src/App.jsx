@@ -13,6 +13,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Layout from "./dashboard/Layout";
 import Navbar from "./components/Navbar/Navbar";
+import AboutUs from './components/About Us/AboutUs';
+import Vision from "./components/Our Visison/Vision";
+import RecipientDashboard from "./requestfood/pages/Requestfood";
 
 import Profile from "./dashboard/Profile";
 import Food from "./dashboard/Food";
@@ -33,9 +36,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/donation" element={<FoodDonation />} />
-
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/vision" element={<Vision />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/requestfood" element={<RecipientDashboard/>} />
 
         {token ? (
           <Route element={<Layout />}>

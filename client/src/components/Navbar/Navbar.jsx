@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import AboutUs from "../About Us/AboutUs";
 
 const Navbar = ({ token }) => {
   const { id } = useParams();
@@ -15,8 +16,8 @@ const Navbar = ({ token }) => {
     <nav className="main">
       <div className="logo">
         <h2>
-          ShareThe
-          <span>MEAL</span>
+          Grain
+          <span>Chain</span>
         </h2>
       </div>
       <div className={showMenu ? "nav-items mobile-menu-link" : "nav-items"}>
@@ -26,27 +27,27 @@ const Navbar = ({ token }) => {
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              href="/"
             >
               Home
             </a>
           </li>
           <li>
-            <a
+            <Link
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              to="/about-us"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
             <a
               style={{
                 fontSize: "1.5rem",
               }}
-              href="#"
+              href="/vision"
             >
               Our Work
             </a>
@@ -73,7 +74,7 @@ const Navbar = ({ token }) => {
             </Link>
           ) : (
             <div className="l-btn">
-              <Link  className="link" to="/login">
+              <Link className="link" to="/login">
                 <button className="btn-nav">Login</button>
               </Link>
               <Link className="link" to="/signup">

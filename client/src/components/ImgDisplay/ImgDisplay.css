@@ -7,10 +7,13 @@
     height: 700px;
     justify-content: center;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .img-text {
-    position: relative;
     text-align: center;
     top: 340px;
     font-size: 70px;
@@ -18,11 +21,10 @@
 }
 
 .img-text span {
-    color: red;
+    color: green;
 }
 
 h3 {
-    position: relative;
     text-align: center;
     top: 343px;
     font-size: 25px;
@@ -30,20 +32,24 @@ h3 {
     font-weight: 500;
 }
 
-.btn {
+  .buttons {
+    display: flex;
+    gap: 20px; /* space between buttons */
+    justify-content: center;
+    margin-top: 2rem; /* adjust as needed */
+  }
+  
+  .btn {
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
     border: 1.5px solid transparent;
-    background: rgb(250, 1, 1);
+    background: green;
     color: white;
-    position: relative;
-    top: 355px;
-    text-align: center;
-    left: 43.5%;
-}
 
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: #f5f5f5;
     cursor: pointer;
     color: black;
-}
+  }

@@ -62,8 +62,8 @@ const Sidebar = ({ user, isSiderOpen, setIsSiderOpen }) => {
         <div className="sidebar__header__logo">
           <Link to="/">
             <h1>
-              <span style={{ color: "#000000", fontSize: "1.5rem" }}>
-                ShareThe<span style={{ color: "red", fontSize: "2rem" }} >MEAL</span>
+              <span style={{ color: "#000000", fontSize: "2.5rem" }}>
+                Grain<span style={{ color: "green", fontSize: "2.5rem" }} >Chain</span>
               </span>
             </h1>
           </Link>
@@ -87,7 +87,7 @@ const Sidebar = ({ user, isSiderOpen, setIsSiderOpen }) => {
               gap: "1rem",
               cursor: "pointer",
               color: active === item.path.substring(1) ? "#fff" : "",
-              backgroundColor: active === item.path.substring(1) ? "red" : "",
+              backgroundColor: active === item.path.substring(1) ? "green" : "",
               padding: "1rem 1.5rem",
               borderRadius: "0.5rem",
             }}

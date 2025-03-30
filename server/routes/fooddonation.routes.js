@@ -33,4 +33,9 @@ router.post("/fooddonation", async (req, res) => {
     }
 });
 
+router.get("/fooddonation",async (req,res)=>{
+    const foods = await Food.find({})
+    res.status(201).json(foods);
+})
+
 export default router;

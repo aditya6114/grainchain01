@@ -21,14 +21,14 @@ const FoodCard = ({ name, quantity, date, address, tag }) => {
         >
           {tag ? tag : "food"}
         </p>
-        <img
+        {/* <img
           className="foodcard-img"
           src={`https://source.unsplash.com/random/?${name}`}
           alt="Card Image"
-        />
+        /> */}
         <div class="card-content">
           <h2 className="food-title">{name}</h2>
-          <div className="food-details">
+          <div className="food-details">  
             <ul className="icons">
               <li>
                 <span className="icons-name">

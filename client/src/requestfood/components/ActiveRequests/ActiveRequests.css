@@ -1,0 +1,162 @@
+/* ActiveRequests.css */
+
+/* Base Styles */
+.arq {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: 2rem; /* Slightly larger */
+  font-weight: 600;
+}
+
+.requests-section {
+  max-width: 1000px; /* Even wider */
+  margin: 0 auto;
+  padding: 2rem; /* More padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.requests-list {
+  display: grid;
+  gap: 1.5rem; /* More space between cards */
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 15px; /* More scrollbar space */
+  scrollbar-width: thin;
+  scrollbar-color: #bdc3c7 #f1f1f1;
+}
+
+/* Custom scrollbar */
+.requests-list::-webkit-scrollbar {
+  width: 10px; /* Thicker scrollbar */
+}
+
+.requests-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.requests-list::-webkit-scrollbar-thumb {
+  background: #95a5a6;
+  border-radius: 10px;
+}
+
+/* Request Card - Wider Version */
+.request-card {
+  background: white;
+  border-radius: 12px; /* More rounded */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+  padding: 1.8rem; /* More padding */
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px; /* Wider cards */
+  transition: all 0.3s ease; /* Smoother transition */
+}
+
+.request-card:hover {
+  transform: translateY(-5px); /* More lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.request-info {
+  flex: 1;
+  min-width: 500px; /* Wider info section */
+}
+
+.request-info h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Larger text */
+  color: #2c3e50; /* Darker for better contrast */
+}
+
+.request-info p {
+  margin: 0.6rem 0; /* More spacing */
+  color: #7f8c8d;
+  font-size: 1.1rem; /* Slightly larger */
+}
+
+/* Status & Priority - Wider Section */
+.request-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem; /* More space between badges */
+  min-width: 250px; /* Wider status section */
+}
+
+/* Enhanced Status Badges */
+.status {
+  padding: 0.4rem 1.2rem; /* Larger badges */
+  border-radius: 25px; /* More rounded */
+  font-size: 0.9rem;
+  font-weight: 700; /* Bolder text */
+  text-transform: uppercase;
+  letter-spacing: 0.5px; /* Better typography */
+}
+
+/* Special Pending Status Color */
+.status-pending {
+  background-color: #9b59b6; /* Purple/violet color */
+  color: white;
+  box-shadow: 0 2px 5px rgba(155, 89, 182, 0.3); /* Subtle glow */
+}
+
+.status-approved {
+  background-color: #27ae60; /* Different green */
+  color: white;
+}
+
+.status-transit {
+  background-color: #2980b9; /* Different blue */
+  color: white;
+}
+
+.status-completed {
+  background-color: #7f8c8d; /* Different gray */
+  color: white;
+}
+
+/* Priority Badges */
+.priority {
+  padding: 0.4rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.priority-high {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.priority-medium {
+  background-color: #f39c12;
+  color: white;
+}
+
+.priority-low {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+/* Dietary and Date Styling */
+.dietary-info {
+  color: #16a085 !important;
+  font-weight: 600; /* Bolder */
+  font-size: 1.05rem !important;
+}
+
+.request-date {
+  color: #e67e22 !important;
+  font-weight: 600;
+  font-size: 1rem !important;
+}
+
+/* No Data Message */
+.no-data {
+  text-align: center;
+  color: #95a5a6;
+  font-style: italic;
+  padding: 3rem; /* More padding */
+  font-size: 1.2rem;
+}

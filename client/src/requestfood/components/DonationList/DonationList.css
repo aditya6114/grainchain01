@@ -1,0 +1,163 @@
+/* DonationList Component Styles */
+
+/* Section Container */
+.donations-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 565px;
+}
+
+/* Section Title */
+.donations-section h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eaeaea;
+}
+
+/* Donations List Container */
+.donations-list {
+  display: grid;
+  gap: 1rem;
+  overflow: scroll;
+  max-height: 80%;
+}
+
+/* Individual Donation Card */
+.donation-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.donation-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Food Name - Now at the top */
+.food-name {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  order: 1;
+  position: initial !important;
+  top: auto !important;
+  text-align: initial !important;
+}
+
+/* Donation Details */
+.donation-details {
+  order: 2;
+}
+
+.quantity {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Donation Meta Information */
+.donation-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+
+.distance {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.distance::before {
+  content: "📍";
+  margin-right: 0.3rem;
+}
+
+/* Priority Badge */
+.priority {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priority-high {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.priority-medium {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.priority-low {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Request Button */
+.request-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+  order: 3;
+  align-self: flex-start;
+}
+
+.request-btn:hover {
+  background-color: #219653;
+}
+
+.request-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Empty State */
+.no-data {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .donation-card {
+    padding: 1rem;
+  }
+  
+  .donation-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .request-btn {
+    width: 100%;
+  }
+}
